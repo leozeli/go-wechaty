@@ -1,6 +1,6 @@
 module github.com/wechaty/go-wechaty
 
-go 1.18
+go 1.21
 
 require (
 	github.com/hashicorp/golang-lru v0.5.4
@@ -16,7 +16,7 @@ require (
 )
 
 require (
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect; indirecta
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.10.0 // indirect
 	github.com/maruel/rs v0.0.0-20150922171536-2c81c4312fe4 // indirect

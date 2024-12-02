@@ -86,7 +86,7 @@ You can add the "%s_" prefix to your token
 like: "%s_%s
 and try again`, TLSInsecureServerCertCommonName, TLSInsecureServerCertCommonName, token)
 	}
-
+	token = strings.Split(token, "_")[1]
 	// TODO puppet is poorly designed, consider refactoring
 	puppetAbstract, err := wechatyPuppet.NewPuppet(opts.Option)
 	if err != nil {
