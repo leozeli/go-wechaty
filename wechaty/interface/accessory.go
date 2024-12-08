@@ -1,7 +1,7 @@
 package _interface
 
 import (
-  wechatyPuppet "github.com/wechaty/go-wechaty/wechaty-puppet"
+	wechatyPuppet "github.com/leozeli/go-wechaty/wechaty-puppet"
 )
 
 // IAccessory accessory interface

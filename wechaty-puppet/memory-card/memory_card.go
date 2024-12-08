@@ -1,9 +1,10 @@
 package memory_card
 
 import (
-  "encoding/json"
-  storage2 "github.com/wechaty/go-wechaty/wechaty-puppet/memory-card/storage"
-  "sync"
+	"encoding/json"
+	"sync"
+
+	storage2 "github.com/leozeli/go-wechaty/wechaty-puppet/memory-card/storage"
 )
 
 // memory card interface

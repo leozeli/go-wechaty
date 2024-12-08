@@ -1,6 +1,6 @@
 package _interface
 
-import "github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
+import "github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
 
 type IImageFactory interface {
 	Create(id string) IImage

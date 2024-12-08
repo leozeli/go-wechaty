@@ -1,8 +1,9 @@
 package wechaty
 
 import (
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
 	"testing"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 func TestNewWechaty(t *testing.T) {

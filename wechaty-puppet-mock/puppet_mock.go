@@ -1,9 +1,9 @@
 package wechaty_puppet_mock
 
 import (
-	wechatyPuppet "github.com/wechaty/go-wechaty/wechaty-puppet"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
+	wechatyPuppet "github.com/leozeli/go-wechaty/wechaty-puppet"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 var _ wechatyPuppet.IPuppetAbstract = &PuppetMock{}

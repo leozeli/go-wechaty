@@ -1,13 +1,13 @@
 # go-wechaty
 
 ![Go Version](https://img.shields.io/github/go-mod/go-version/wechaty/go-wechaty)
-[![Go](https://github.com/wechaty/go-wechaty/workflows/Go/badge.svg)](https://github.com/wechaty/go-wechaty/actions?query=workflow%3AGo)
+[![Go](https://github.com/leozeli/go-wechaty/workflows/Go/badge.svg)](https://github.com/leozeli/go-wechaty/actions?query=workflow%3AGo)
 [![Maintainability](https://api.codeclimate.com/v1/badges/dbae0a43d431b0fccee5/maintainability)](https://codeclimate.com/github/wechaty/go-wechaty/maintainability)
 
 ![Go Wechaty](https://wechaty.github.io/go-wechaty/images/go-wechaty.png)
 
-[![Go Wechaty Getting Started](https://img.shields.io/badge/Go%20Wechaty-Getting%20Started-7de)](https://github.com/wechaty/go-wechaty-getting-started)
-[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/wechaty/go-wechaty)
+[![Go Wechaty Getting Started](https://img.shields.io/badge/Go%20Wechaty-Getting%20Started-7de)](https://github.com/leozeli/go-wechaty-getting-started)
+[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/leozeli/go-wechaty)
 
 ## Connecting Chatbots
 
@@ -49,9 +49,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/wechaty/go-wechaty/wechaty"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-	"github.com/wechaty/go-wechaty/wechaty/user"
+	"github.com/leozeli/go-wechaty/wechaty"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	"github.com/leozeli/go-wechaty/wechaty/user"
 )
 
 func main() {
@@ -77,7 +77,7 @@ func main() {
 ```shell
 # go get wechaty
 
-go get github.com/wechaty/go-wechaty
+go get github.com/leozeli/go-wechaty
 ```
 
 ## Development
@@ -121,9 +121,9 @@ Read more from our Multi-language Wechaty Beta Release event from our blog:
 ### v0.1 (Apr 03 2020)
 
 1. Welcome our second and third Go Wechaty contributors:
-    - Bojie LI (李博杰) <https://github.com/SilkageNet> [#9](https://github.com/wechaty/go-wechaty/pull/9)
-    - Chaofei DING (丁超飞) <https://github.com/dchaofei> [#20](https://github.com/wechaty/go-wechaty/pull/20)
-1. Enable [GitHub Actions](https://github.com/wechaty/go-wechaty/actions?query=workflow%3AGo)
+    - Bojie LI (李博杰) <https://github.com/SilkageNet> [#9](https://github.com/leozeli/go-wechaty/pull/9)
+    - Chaofei DING (丁超飞) <https://github.com/dchaofei> [#20](https://github.com/leozeli/go-wechaty/pull/20)
+1. Enable [GitHub Actions](https://github.com/leozeli/go-wechaty/actions?query=workflow%3AGo)
     1. Enable linting: [golint](https://github.com/golang/lint)
     1. Enable testing: [testing](https://golang.org/pkg/testing/)
 1. Add Makefile for easy developing
@@ -134,22 +134,22 @@ Read more from our Multi-language Wechaty Beta Release event from our blog:
 
 1. Project created.
 1. Welcome our first Go Wechaty contributor:
-    - Xiaoyu DING （丁小雨） <https://github.com/dingdayu> [#2](https://github.com/wechaty/go-wechaty/pull/2)
+    - Xiaoyu DING （丁小雨） <https://github.com/dingdayu> [#2](https://github.com/leozeli/go-wechaty/pull/2)
 
 ## Related Projects
 
 - [Wechaty](https://github.com/wechaty/wechaty) - Conversatioanl AI Chatot SDK for Wechaty Individual Accounts (TypeScript)
 - [Python Wechaty](https://github.com/wechaty/python-wechaty) - Python WeChaty Conversational AI Chatbot SDK for Wechat Individual Accounts (Python)
-- [Go Wechaty](https://github.com/wechaty/go-wechaty) - Go WeChaty Conversational AI Chatbot SDK for Wechat Individual Accounts (Go)
+- [Go Wechaty](https://github.com/leozeli/go-wechaty) - Go WeChaty Conversational AI Chatbot SDK for Wechat Individual Accounts (Go)
 - [Java Wechaty](https://github.com/wechaty/java-wechaty) - Java WeChaty Conversational AI Chatbot SDK for Wechat Individual Accounts (Java)
 - [Scala Wechaty](https://github.com/wechaty/scala-wechaty) - Scala WeChaty Conversational AI Chatbot SDK for WechatyIndividual Accounts (Scala)
 
 ## Badge
 
-[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/wechaty/go-wechaty)
+[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/leozeli/go-wechaty)
 
 ```md
-[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/wechaty/go-wechaty)
+[![Wechaty in Go](https://img.shields.io/badge/Wechaty-Go-7de)](https://github.com/leozeli/go-wechaty)
 ```
 
 ## Contributors

@@ -2,10 +2,11 @@ package wechaty
 
 import (
 	"fmt"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
 	"reflect"
 	"runtime/debug"
 	"sync"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 // PluginEvent stores the event name and the callback function.

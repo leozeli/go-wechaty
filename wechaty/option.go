@@ -1,9 +1,9 @@
 package wechaty
 
 import (
-	wp "github.com/wechaty/go-wechaty/wechaty-puppet"
-	puppetservice "github.com/wechaty/go-wechaty/wechaty-puppet-service"
-	mc "github.com/wechaty/go-wechaty/wechaty-puppet/memory-card"
+	wp "github.com/leozeli/go-wechaty/wechaty-puppet"
+	puppetservice "github.com/leozeli/go-wechaty/wechaty-puppet-service"
+	mc "github.com/leozeli/go-wechaty/wechaty-puppet/memory-card"
 )
 
 // Option wechaty option

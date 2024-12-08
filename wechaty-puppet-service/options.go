@@ -1,8 +1,9 @@
 package puppetservice
 
 import (
-	wechatypuppet "github.com/wechaty/go-wechaty/wechaty-puppet"
 	"time"
+
+	wechatypuppet "github.com/leozeli/go-wechaty/wechaty-puppet"
 )
 
 // TLSConfig tls config

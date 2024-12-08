@@ -3,10 +3,11 @@ package filebox
 import (
 	"bytes"
 	"fmt"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/helper"
 	"io"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/helper"
 )
 
 type fileBoxUrl struct {

@@ -1,5 +1,5 @@
 /**
- * Go Wechaty - https://github.com/wechaty/go-wechaty
+ * Go Wechaty - https://github.com/leozeli/go-wechaty
  *
  * Authors: Huan LI (李卓桓) <https://github.com/huan>
  *          Bojie LI (李博杰) <https://github.com/SilkageNet>
@@ -23,10 +23,11 @@ package user
 
 import (
 	"fmt"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-	"github.com/wechaty/go-wechaty/wechaty/config"
-	_interface "github.com/wechaty/go-wechaty/wechaty/interface"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	"github.com/leozeli/go-wechaty/wechaty/config"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
 )
 
 type Contact struct {

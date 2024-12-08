@@ -2,9 +2,10 @@ package factory
 
 import (
 	"encoding/json"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-	_interface "github.com/wechaty/go-wechaty/wechaty/interface"
-	"github.com/wechaty/go-wechaty/wechaty/user"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
+	"github.com/leozeli/go-wechaty/wechaty/user"
 )
 
 type FriendshipFactory struct {

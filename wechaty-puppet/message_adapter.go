@@ -1,9 +1,10 @@
 package wechatypuppet
 
 import (
-	"github.com/wechaty/go-wechaty/wechaty-puppet/helper"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
 	"regexp"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/helper"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 var numRegex = regexp.MustCompile(`^\d+$`)
@@ -52,6 +53,6 @@ func (r RecalledMsgAdapter) Handle(payload *schemas.MessagePayload) {
 		return
 	}
 	// padlocal 返回的是 xml，需要解析出 msgId
-	// https://github.com/wechaty/go-wechaty/issues/87
+	// https://github.com/leozeli/go-wechaty/issues/87
 	payload.Text = helper.ParseRecalledID(payload.Text)
 }

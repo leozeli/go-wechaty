@@ -1,5 +1,5 @@
 /**
- * Go Wechaty - https://github.com/wechaty/go-wechaty
+ * Go Wechaty - https://github.com/leozeli/go-wechaty
  *
  * Authors: Huan LI (李卓桓) <https://github.com/huan>
  *          Xiaoyu DING (丁小雨） <https://github.com/dingdayu>
@@ -26,19 +26,20 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/lucsky/cuid"
-	wp "github.com/wechaty/go-wechaty/wechaty-puppet"
-	puppetservice "github.com/wechaty/go-wechaty/wechaty-puppet-service"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/events"
-	mc "github.com/wechaty/go-wechaty/wechaty-puppet/memory-card"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-	"github.com/wechaty/go-wechaty/wechaty/factory"
-	"github.com/wechaty/go-wechaty/wechaty/interface"
 	"os"
 	"os/signal"
 	"reflect"
 	"runtime/debug"
 	"time"
+
+	wp "github.com/leozeli/go-wechaty/wechaty-puppet"
+	puppetservice "github.com/leozeli/go-wechaty/wechaty-puppet-service"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/events"
+	mc "github.com/leozeli/go-wechaty/wechaty-puppet/memory-card"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	"github.com/leozeli/go-wechaty/wechaty/factory"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
+	"github.com/lucsky/cuid"
 )
 
 // Wechaty ...
@@ -463,7 +464,7 @@ func (w *Wechaty) initPuppetEventBridge() {
 			})
 		case schemas.PuppetEventNameDirty:
 			/**
-			 * https://github.com/wechaty/go-wechaty/issues/72
+			 * https://github.com/leozeli/go-wechaty/issues/72
 			 */
 			w.puppet.On(name, func(i ...interface{}) {
 				payload := i[0].(*schemas.EventDirtyPayload)

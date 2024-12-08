@@ -1,8 +1,9 @@
 package config
 
 import (
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
 	"regexp"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
 )
 
 // AtSepratorRegex mobile: \u2005, PC、mac: \u0020

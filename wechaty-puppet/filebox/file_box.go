@@ -6,9 +6,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/tuotoo/qrcode"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/helper"
-	logger "github.com/wechaty/go-wechaty/wechaty-puppet/log"
 	"io"
 	"io/ioutil"
 	"mime"
@@ -17,6 +14,10 @@ import (
 	path2 "path"
 	"path/filepath"
 	"strings"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/helper"
+	logger "github.com/leozeli/go-wechaty/wechaty-puppet/log"
+	"github.com/tuotoo/qrcode"
 )
 
 var (

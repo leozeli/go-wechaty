@@ -1,9 +1,9 @@
 package user
 
 import (
-  "github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-  "github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-  "github.com/wechaty/go-wechaty/wechaty/interface"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
 )
 
 type Images struct {

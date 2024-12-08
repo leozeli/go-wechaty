@@ -3,11 +3,12 @@ package puppetservice
 import (
 	"bytes"
 	"errors"
+	"io"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/helper"
 	pbwechaty "github.com/wechaty/go-grpc/wechaty"
 	pbwechatypuppet "github.com/wechaty/go-grpc/wechaty/puppet"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/helper"
-	"io"
 )
 
 // ErrNoName err no name

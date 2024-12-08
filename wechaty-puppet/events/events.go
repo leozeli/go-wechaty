@@ -2,9 +2,10 @@
 package events
 
 import (
-	logger "github.com/wechaty/go-wechaty/wechaty-puppet/log"
 	"reflect"
 	"sync"
+
+	logger "github.com/leozeli/go-wechaty/wechaty-puppet/log"
 )
 
 var log = logger.L.WithField("module", "wechaty-puppet/events")

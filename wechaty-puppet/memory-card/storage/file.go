@@ -2,11 +2,12 @@ package storage
 
 import (
 	"encoding/json"
-	helper_functions "github.com/wechaty/go-wechaty/wechaty-puppet/helper"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
+
+	helper_functions "github.com/leozeli/go-wechaty/wechaty-puppet/helper"
 )
 
 type FileStorage struct {

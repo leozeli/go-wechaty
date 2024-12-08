@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	_interface "github.com/wechaty/go-wechaty/wechaty/interface"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
 )
 
 type RoomInvitation struct {

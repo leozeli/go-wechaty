@@ -3,8 +3,8 @@ package user
 import (
 	"errors"
 
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	_interface "github.com/wechaty/go-wechaty/wechaty/interface"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
 )
 
 type ContactSelf struct {

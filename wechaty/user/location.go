@@ -2,7 +2,8 @@ package user
 
 import (
 	"fmt"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 type Location struct {

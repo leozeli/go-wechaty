@@ -1,5 +1,5 @@
 /**
- * Go Wechaty - https://github.com/wechaty/go-wechaty
+ * Go Wechaty - https://github.com/leozeli/go-wechaty
  *
  * Authors: Huan LI (李卓桓) <https://github.com/huan>
  *          Chao Fei () <https://github.com/dchaofei>
@@ -21,7 +21,7 @@
 
 package user
 
-import "github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
+import "github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 
 type MiniProgram struct {
 	payload *schemas.MiniProgramPayload

@@ -3,11 +3,12 @@ package puppetservice
 import (
 	"encoding/json"
 	"fmt"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"strings"
+
+	"google.golang.org/grpc/resolver"
+	"google.golang.org/grpc/resolver/manual"
 )
 
 func wechatyResolver() resolver.Builder {
@@ -62,7 +63,7 @@ func discoverAPI(uri string) (*serviceAddress, error) {
 	if response.StatusCode < 200 || response.StatusCode >= 300 {
 		return nil, fmt.Errorf("discoverAPI http.Get() status:%s %w", response.Status, err)
 	}
-	data, err := ioutil.ReadAll(response.Body)
+	data, err := io.ReadAll(response.Body)
 	if err != nil {
 		return nil, fmt.Errorf("discoverAPI ioutil.ReadAll %w", err)
 	}

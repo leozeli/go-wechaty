@@ -6,17 +6,18 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	pbwechaty "github.com/wechaty/go-grpc/wechaty"
-	pbwechatypuppet "github.com/wechaty/go-grpc/wechaty/puppet"
-	wechatyPuppet "github.com/wechaty/go-wechaty/wechaty-puppet"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/helper"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"io"
 	"strings"
 	"time"
+
+	wechatyPuppet "github.com/leozeli/go-wechaty/wechaty-puppet"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/helper"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
+	pbwechaty "github.com/wechaty/go-grpc/wechaty"
+	pbwechatypuppet "github.com/wechaty/go-grpc/wechaty/puppet"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 var (

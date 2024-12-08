@@ -1,8 +1,8 @@
 package wechaty
 
 import (
-  wechatypuppet "github.com/wechaty/go-wechaty/wechaty-puppet"
-  _interface "github.com/wechaty/go-wechaty/wechaty/interface"
+	wechatypuppet "github.com/leozeli/go-wechaty/wechaty-puppet"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
 )
 
 // Accessory ...

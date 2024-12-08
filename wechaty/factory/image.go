@@ -1,8 +1,8 @@
 package factory
 
 import (
-	_interface "github.com/wechaty/go-wechaty/wechaty/interface"
-	"github.com/wechaty/go-wechaty/wechaty/user"
+	_interface "github.com/leozeli/go-wechaty/wechaty/interface"
+	"github.com/leozeli/go-wechaty/wechaty/user"
 )
 
 type ImageFactory struct {

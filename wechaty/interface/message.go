@@ -1,9 +1,10 @@
 package _interface
 
 import (
-	"github.com/wechaty/go-wechaty/wechaty-puppet/filebox"
-	"github.com/wechaty/go-wechaty/wechaty-puppet/schemas"
 	"time"
+
+	"github.com/leozeli/go-wechaty/wechaty-puppet/filebox"
+	"github.com/leozeli/go-wechaty/wechaty-puppet/schemas"
 )
 
 type IMessageFactory interface {
