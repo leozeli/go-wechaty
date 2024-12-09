@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	wp "github.com/leozeli/go-wechaty/wechaty-puppet"
 	"log"
 	"net/url"
 	"os"
@@ -12,17 +13,16 @@ import (
 	"github.com/leozeli/go-wechaty/wechaty/user"
 
 	"github.com/leozeli/go-wechaty/sockets"
-
 	"github.com/leozeli/go-wechaty/wechaty"
 	"github.com/mdp/qrterminal/v3"
 )
 
 func main() {
-
-
-	var bot = wechaty.NewWechaty(
-		
-	)
+	var bot = wechaty.NewWechaty(wechaty.WithPuppetOption(
+		wp.Option{
+			Endpoint: os.Getenv("END_POINT"),
+			Token:    os.Getenv("TOKEN"),
+		}))
 	bot.OnScan(onScan).OnLogin(func(ctx *wechaty.Context, user *user.ContactSelf) {
 		fmt.Printf("User %s logined\n", user.Name())
 	}).OnMessage(onMessage).OnLogout(func(ctx *wechaty.Context, user *user.ContactSelf, reason string) {
@@ -40,7 +40,7 @@ func onMessage(ctx *wechaty.Context, message *user.Message) {
 			log.Println(err)
 			return
 		}
-		log.Printf("%v",miniApp.Payload())
+		log.Printf("%v", miniApp.Payload())
 	}
 
 	if message.Self() {
@@ -53,12 +53,12 @@ func onMessage(ctx *wechaty.Context, message *user.Message) {
 		return
 	}
 
-	if message.Type() != schemas.MessageTypeText ||  !slices.Contains(sockets.GloabConfig.GetKeys(),message.Text()) {
+	if message.Type() != schemas.MessageTypeText || !slices.Contains(sockets.GloabConfig.GetKeys(), message.Text()) {
 		log.Println("Message discarded because it does not match #ding")
 		return
 	}
 	miniapp := &schemas.MiniProgramPayload{
-		AppId:        "wx4f1c1e5f2f674834",
+		Appid: "wx4f1c1e5f2f674834",
 	}
 	newMessage := user.NewMiniProgram(miniapp)
 	// 1. reply text 'dong'
@@ -75,8 +75,8 @@ func onMessage(ctx *wechaty.Context, message *user.Message) {
 	// fileBox := filebox.FromUrl("https://wechaty.github.io/wechaty/images/bot-qr-code.png")
 	// _, err = message.Say(fileBox)
 	// if err != nil {
-		// log.Println(err)
-		// return
+	// log.Println(err)
+	// return
 	// }
 
 	// log.Printf("REPLY with image: %s\n", fileBox)
